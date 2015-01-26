@@ -1,0 +1,22 @@
+{
+  "name": "Banda",
+  "version": "1.0.0",
+  "authors": [
+    "Basil Nyachogo <basil.nyachogo@gmail.com>"
+  ],
+  "description": "playing with stuff",
+  "main": "css/main",
+  "license": "MIT",
+  "homepage": "index.htlm",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-smart-table": "~1.4.8"
+  }
+}

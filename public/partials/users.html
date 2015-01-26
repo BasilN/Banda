@@ -1,4 +1,36 @@
 <div>
+    <table ng-table="tablePArams." class="table table-striped">
+      <thead>
+        <tr>
+          <th st-sort="_id">Name</th>
+          <th st-sort="getters.email">Email</th>
+          <th st-sort="password">Password</th>
 
-  <span>"This is a partial"</span>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="row in users">
+          <td>{{row.local.email}}</td>
+          <td>{{row.local.email}}</td>
+          <td>{{row.local.password}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button ng-click="tableParams.sorting({})" class="btn btn-default pull-right">Clear sorting</button>
+    <p><strong>Sorting:</strong> {{tableParams.sorting()|json}}
+
+      <table ng-table="tableParams" class="table">
+        <tr ng-repeat="user in users">
+          <td data-title="'Name'" sortable="'local.email'">
+            {{user.local.email}}
+          </td>
+          <td data-title="'Age'" sortable="'local.password'">
+            {{user.local.password}}
+          </td>
+        </tr>
+      </table>
+
+    </div>
+
 </div>
